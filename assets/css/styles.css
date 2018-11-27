@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../fonts/Gilroy-Light.otf');
+}
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('../fonts/Gilroy-ExtraBold.otf');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+/* Navbar Section */
+
+.navbar {
+    margin: 0;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.15s ease all;
+}
+
+.navbar-right {
+    padding: 4px 0;
+}
+
+.navbar.scroll, .navbar.active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar .navbar-brand {
+    outline: none;
+    font-size: 32px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.navbar-nav > li {
+    outline: none;
+}
+
+.navbar-nav > li > a {
+    color: #FFF;
+    font-size: 13px;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    margin-right: 15px;
+    transition: 0.15s ease all;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li.active a:hover {
+    background: #FFF;
+    color: #763A46;
+}
+
+.navbar-nav > li.active a, .navbar-nav > li a:focus {
+    color: #FFF;
+    background: transparent;
+    border: 1px solid #FFF;
+}
+
+/* Main Section */
+
+#main {
+    background: url("../img/mainbg.jpg");
+    background-size: cover;
+    padding: 150px 0 150px 120px;
+    min-height: 100vh;
+}
+
+#main h1 {
+    color: #FFF;
+    font-family: 'GilroyBold';
+    font-size: 105px;
+    margin: 20px 0 45px;
+}
+
+#main p {
+    color: #FFF;
+    font-family: 'Palatino';
+    font-size: 26px;
+    max-width: 600px;
+    margin: 0 0 60px;
+}
+
+#main button {
+    background-color: #FFF;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    font-size: 13px;
+    border: 2px solid #FFF;
+    outline: none;
+    transition: 0.3s ease all;
+}
+
+#main button:hover {
+    background: transparent;
+    color: #FFF;
+}
+
+/* Services Section */
+
+#services {
+    padding: 50px 0 55px;
+    background-color: #fafafa;
+    border-bottom: 20px solid #000;
+}
+
+#services h2 {
+    margin: 0 0 40px;
+    text-align: center;
+    font-family: 'GilroyBold';
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+#services .col-md-12 {
+    padding: 0;
+}
+
+#services .col-md-12 .col-md-6:nth-child(2n) .item {
+    float: right;
+}
+
+#services .item {
+    width: 96%;
+    display: flex;
+    background-color: #FFF;
+    padding: 40px 25px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+#services .item .image {
+    margin-right: 23px;
+}
+
+#services .item .image img {
+    width: 125px;
+}
+
+#services .item .about h4 {
+    font-family: 'GilroyBold';
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+#services .item .about p {
+    font-family: 'GilroyLight';
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Contacts Section */
+
+#contacts {
+    padding: 45px 0 75px;
+}
+
+#contacts h4 {
+    margin: 0 0 25px;
+    font-family: 'GilroyBold';
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#contacts a {
+    color: #000;
+}
+
+#contacts .col-md-3 div {
+    margin: 0 0 35px;
+}
+
+#contacts .col-md-3 div:last-child {
+    margin: 0;
+}
+
+#contacts .socials {
+    padding: 10px 30px 0;
+}
+
+#contacts .socials .connect {
+    margin: 0 0 15px;
+}
+
+#contacts .socials .input-group {
+    margin-bottom: 30px;
+}
+
+#contacts .socials .input-group .form-control {
+    height: 37px;
+    font-size: 13px;
+    box-shadow: none;
+}
+
+#contacts .socials .input-group span {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: 'GilroyBold';
+    background-color: #000;
+}
+
+#contacts .socials .fa {
+    font-size: 32px;
+    color: #000;
+    margin-right: 5px;
+    opacity: 0.6;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .madein p {
+    font-family: 'GilroyBold';
+    font-size: 15px;
+}
+
+footer .copyright {
+    text-align: right;
+    font-size: 12px;
+}
+
+footer .copyright a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+/* Media queries */
+
+@media (min-width: 1377px) {
+    .container {
+        width: 1300px;
+    }
+
+    .navbar .container {
+        width: 1230px;
+    }
+
+    #contacts .container, footer .container {
+        width: 1030px;
+    }
+}
+
+@media (max-width: 1376px) {
+
+    #main {
+        padding: 120px 0 120px 70px;
+    }
+
+    #main h1 {
+        font-size: 95px;
+        max-width: 85%;
+    }
+
+    #services .item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #main {
+        padding: 120px 15px;
+    }
+
+    #main h1 {
+        font-size: 75px;
+        max-width: 100%;
+    }
+
+    #services .item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    #main {
+        padding: 100px 15px;
+        min-height: auto;
+    }
+
+    #main h1 {
+        font-size: 60px;
+        margin: 20px 0 25px;
+    }
+
+    #main p {
+        font-size: 24px;
+        margin: 0 0 50px;
+    }
+
+    #services {
+        padding: 30px 0;
+    }
+
+    #services h2 {
+        margin: 0 0 30px;
+        font-size: 36px;
+    }
+
+    #services .item {
+        width: 100%;
+    }
+
+    #contacts .socials {
+        padding: 20px 15px 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        margin: 0;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 28px;
+    }
+
+    .navbar-collapse {
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: #FFF;
+    }
+
+    .navbar-nav > li > a {
+        margin: 0;
+    }
+
+    #main h1 {
+        font-size: 44px;
+    }
+
+    footer .copyright {
+        text-align: left;
+        margin: 10px 0 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #main {
+        padding: 80px 15px 60px;
+    }
+
+    #main h1 {
+        font-size: 32px;
+        margin: 30px 0 45px;
+    }
+
+    #main p {
+        font-size: 20px;
+        margin: 0 0 50px;
+    }
+
+    #services h2 {
+        font-size: 28px;
+    }
+
+    #services .item {
+        display: block;
+        padding: 20px;
+    }
+
+    #services .item .image {
+        margin-bottom: 20px;
+    }
+
+    #services .item .about p {
+        font-size: 16px;
+    }
+}
+
+/* Other styles */
+
+.home, .services, .contact {
+    cursor: pointer;
+}
